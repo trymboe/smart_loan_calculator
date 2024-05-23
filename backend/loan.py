@@ -81,8 +81,6 @@ class Loan:
             borrower.add_tax_deduction(self.get_tax_deduction(borrower))
         self.remaining_loan_amount -= down_payments
         self.print_this_payment()
-        if self.repayment_period_months == 100:
-            exit()
 
     def calculate_tax_deduction(self, salary, intrest_cost):
         prev_tax_bracket = 50_000
